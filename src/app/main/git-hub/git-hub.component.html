@@ -1,0 +1,7 @@
+<div class="container" [class.ready]="!!user">
+    <input [formControl]="findControl" class="inputUser" placeholder="GitHub username" />
+    <div class="githubLogo" *ngIf="!user"><img src="../../../assets/github-logo.png" alt="github"></div>
+    <app-user *ngIf="user" [user]="user"></app-user>
+
+    <app-error *ngIf="error"></app-error>
+</div>

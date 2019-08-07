@@ -1,0 +1,52 @@
+<accordion [closeOthers]="oneAtATime">
+    <accordion-group heading="" [ngClass]="{accordion1: true}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 timeDateButton">
+                    <div class="timeDateBtn">
+                        <a class="btn btn-primary" (click)="timeFunc()" [(ngModel)]="timeModel" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">
+                            Time
+                        </a>
+                    </div>
+                    <div class="timeDateBtn">
+                        <button type="button" (click)="dateFunc()" class="btn btn-primary" [(ngModel)]="dateModel" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">
+                            Date
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-6 timeDateButton" [ngClass]="{class1:true}">
+                    <!-- <router-outlet name="timeDate"></router-outlet>
+                    [routerLink]='[{ outlets: { timeDate: ["time"] } }]' -->
+                    <div *ngIf="dateTime && timeBool">
+                        <app-time></app-time>
+                    </div>
+                    <div *ngIf="dateTime && dateBool">
+                        <app-date></app-date>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </accordion-group>
+    <accordion-group heading="2" [ngClass]="{accordion2: true}">
+        <div [ngClass]="{accordionText1: true}">
+            <img src="http://placehold.it/150x150" alt="Instagram 01">
+            <h2>Text2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas itaque iusto velit minus rerum odio cum possimus error aperiam consequatur distinctio cumque amet officiis, sint illum quas repudiandae qui delectus. Veritatis earum, numquam
+                sequi quis dolorum provident adipisci nemo veniam, voluptatum quas exercitationem. Architecto vero, doloribus esse eum sed voluptatibus omnis quia libero? Similique quis impedit eveniet maxime deserunt. In? Placeat sunt blanditiis fugiat,
+                aliquid quidem veniam amet vero maxime, atque alias velit ea voluptatibus nihil asperiores animi harum consectetur eum culpa. Delectus earum explicabo nemo assumenda magni porro molestiae! Cum odit accusamus consectetur quam alias sit
+                placeat in exercitationem voluptas eaque dolore minima rerum, esse dolor, ullam, nisi itaque fugiat? Optio libero quia porro non nobis enim distinctio totam.
+            </p>
+        </div>
+    </accordion-group>
+    <accordion-group heading="3" [ngClass]="{accordion3: true}">
+        <div [ngClass]="{accordionText1: true}">
+            <img src="http://placehold.it/150x150" alt="Instagram 01">
+            <h2>Text3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas itaque iusto velit minus rerum odio cum possimus error aperiam consequatur distinctio cumque amet officiis, sint illum quas repudiandae qui delectus. Veritatis earum, numquam
+                sequi quis dolorum provident adipisci nemo veniam, voluptatum quas exercitationem. Architecto vero, doloribus esse eum sed voluptatibus omnis quia libero? Similique quis impedit eveniet maxime deserunt. In? Placeat sunt blanditiis fugiat,
+                aliquid quidem veniam amet vero maxime, atque alias velit ea voluptatibus nihil asperiores animi harum consectetur eum culpa. Delectus earum explicabo nemo assumenda magni porro molestiae! Cum odit accusamus consectetur quam alias sit
+                placeat in exercitationem voluptas eaque dolore minima rerum, esse dolor, ullam, nisi itaque fugiat? Optio libero quia porro non nobis enim distinctio totam.
+            </p>
+        </div>
+    </accordion-group>
+</accordion>

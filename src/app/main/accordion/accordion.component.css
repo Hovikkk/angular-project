@@ -1,0 +1,23 @@
+.accordionText1 img {
+    float: left;
+    margin-right: 20px;
+}
+
+.accordionText1 {
+    height: 360px;
+    width: 100%;
+    overflow-y: scroll;
+    color: #fff;
+}
+
+.accordionText1::-webkit-scrollbar {
+    width: 0px;
+}
+
+.timeDateButton {
+    text-align: center
+}
+
+.timeDateBtn {
+    margin: 40px 0;
+}

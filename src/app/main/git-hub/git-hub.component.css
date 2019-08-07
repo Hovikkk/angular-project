@@ -1,0 +1,20 @@
+.container {
+    height: 480px;
+    text-align: center
+}
+
+.container.ready {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    border-color: #eee #ddd #bbb;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 3px;
+}
+
+input {
+    margin: 100px 20px 10px;
+}
+
+.githubLogo img {
+    width: 50%;
+    margin-top: 30px;
+}

@@ -1,0 +1,15 @@
+.content-wrapper {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.textH1 {
+    padding: 100px 0 20px;
+}
+
+#paginationItem ul {
+    margin: 0;
+    padding-bottom: 20px;
+}

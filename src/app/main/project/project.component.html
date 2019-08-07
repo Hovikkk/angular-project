@@ -1,0 +1,18 @@
+<div class="container">
+    <h1 class="textH1 text-center">Our projects</h1>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4" *ngFor="let content of returnedArray">
+            <div class="card h-100">
+                <a><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a>Project {{content}}</a>
+                    </h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pagination id="paginationItem" [totalItems]="contentArray.length" (pageChanged)="pageChanged($event)" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+</div>

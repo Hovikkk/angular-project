@@ -1,0 +1,43 @@
+.accordion1 .card .card-header {
+    background: url(assets/accordion1.png) 100% 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    height: 400px;
+}
+
+.accordion2 .card .card-header {
+    background: url(assets/accordion2.png) 100% 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    height: 400px;
+}
+
+.accordion3 .card .card-header {
+    background: url(assets/accordion3.png) 100% 100%;
+    background-size: 100% 100%;
+    color: #fff;
+    height: 400px;
+}
+
+.accordion1 .card .panel-collapse,
+.accordion2 .card .panel-collapse,
+.accordion3 .card .panel-collapse {
+    background-color: #337aa7;
+    top: 0;
+    position: absolute;
+    height: 400px;
+    width: 50%;
+}
+
+.accordion2 .card .panel-collapse {
+    right: 0;
+}
+
+#paginationItem ul {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.class1 table {
+    margin: 0 auto;
+}
